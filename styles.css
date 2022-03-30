@@ -1,0 +1,65 @@
+body {
+    font-family: "Open-sans", sans-serif;
+}
+
+.container {
+    background: linear-gradient(315deg, rgb(124, 177, 214) 0%, rgba(202,246,255,1) 100%);
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+label {
+    display:none;
+}
+
+.locationForm {
+    height: 80px;
+    width: 80vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3em 0 3em;
+    width: 80vw;
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+    height: 2.6em;
+}
+
+#locationInput {
+    width: 66vw;
+    padding-left: 20px
+}
+
+#submitButton {
+    width: 2.6em;
+    cursor:pointer;
+}
+
+.infoCard {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-self: center;
+}
