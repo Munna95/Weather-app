@@ -1,3 +1,8 @@
-###GET Weather according to location
+###GET Weather according to city name
 
-GET http://api.openweathermap.org/data/2.5/weather?q=London&APPID=a025b2b1457c6ed72b5d4a5126c33e43
+GET http://api.openweathermap.org/data/2.5/weather?q=London&APPID=17d66de3484c7c276a19fba52f94d56e
+
+
+###GET weather according to coordinates
+
+GET http://api.openweathermap.org/geo/1.0/reverse?lat=-34.6671&lon=-58.6691&limit=1&appid=17d66de3484c7c276a19fba52f94d56e
