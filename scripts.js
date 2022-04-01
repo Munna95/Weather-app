@@ -46,11 +46,11 @@ async function getWeatherData(city) {
       name: data.name,
       timezone: "GMT" + data.timezone / 3600,
       main: data.weather[0].main,
-      actual_temp: data.main.temp.toFixed(1) + "°",
-      temp_min: data.main.temp_min.toFixed(1) + "°",
-      temp_max: data.main.temp_max.toFixed(1) + "°",
-      pressure: data.main.pressure + " hPa",
-      humidity: data.main.humidity + "%"
+      currentTemp: data.main.temp.toFixed(1) + "°C",
+      tempMin: "Min: " + data.main.temp_min.toFixed(1) + "°C",
+      tempMax: "Max: " + data.main.temp_max.toFixed(1) + "°C",
+      pressure: "Pressure: " + data.main.pressure + " hPa",
+      humidity: "Humidity: " + data.main.humidity + "%"
     };
     const weatherIcon = data.weather[0].icon;
     displayWeatherData(weatherData, weatherIcon);

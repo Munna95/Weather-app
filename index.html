@@ -7,27 +7,29 @@
     <title>Weather app</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-
+    <script src="https://kit.fontawesome.com/58ca5eed18.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+    <header>
     <form class="locationForm" id="locationForm">
         <label for="locationInput">Search for a location</label>
         <input type="text" name="locationInput" id="locationInput" placeholder="Search for a location"></input>
-        <input type="submit" value="" id="submitButton">
+        <button type="submit" value="" id="submitButton"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
+    </header>
     <div class="infoCard">
         <img src="" id="weatherImg" alt="Current weather icon"/>
         <ul id="weatherInfoList">
+            <li class="currentTemp"></li>
             <li class="name"></li>
             <li class="timezone"></li>
             <li class="main"></li>
-            <li class="actual_temp"></li>
-            <li class="temp_min"></li>
-            <li class="temp_max"></li>
+            <li class="tempMin"></li>
+            <li class="tempMax"></li>
             <li class="pressure"></li>
             <li class="humidity"></li>
         </ul>
